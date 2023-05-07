@@ -74,3 +74,16 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* CSS CUSTOM PROPERTIES */
+ :root {
+    --clr-primary-700: hsl(300, 43%, 22%);
+    --clr-primary-300:  hsl(333, 80%, 67%);
+
+    --clr-neutral-300: hsl(303, 10%, 53%);
+    --clr-neutral-200: hsl(300, 24%, 96%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+ }
+
+
+
