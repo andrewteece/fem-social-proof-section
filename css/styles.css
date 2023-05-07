@@ -132,6 +132,20 @@ select {
 
  .subtitle {
   font-size: var(--fs-500);
+  color: var(--clr-neutral-300);
+ }
+
+ .split {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+ }
+
+ @media (min-width: 50em) {
+  .split {
+    display: flex;
+    flex-direction: row;
+  }
  }
 
  .reviews li {
@@ -156,6 +170,11 @@ select {
   background-repeat: space;
 }
 
+.reviews {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 
 .quotes blockquote {
   max-width: 25rem;
@@ -165,6 +184,7 @@ select {
   border-radius: var(--br-);
   padding: 2rem;
   margin: 0 auto;
+  height: 100%;
 }
 
 .separate {
