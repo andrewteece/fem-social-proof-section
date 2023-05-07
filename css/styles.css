@@ -135,6 +135,9 @@ select {
  }
 
  .reviews li {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--clr-neutral-200);
   color: var(--clr-primary-700);
   font-weight: 800;
@@ -153,16 +156,39 @@ select {
   background-repeat: space;
 }
 
+
 .quotes blockquote {
+  max-width: 25rem;
   background: var(--clr-primary-700);
   color: var(--clr-neutral-200);
   text-align: left;
   border-radius: var(--br-);
   padding: 2rem;
+  margin: 0 auto;
 }
 
 .separate {
   display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  font-weight: 800;
+}
+
+.status {
+  color: var(--clr-primary-300);
+  margin-bottom: 1rem;
+}
+
+
+
+img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: .5rem;
+  margin-bottom: 1rem;
 }
 
 
