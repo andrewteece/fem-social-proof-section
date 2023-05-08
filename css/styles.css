@@ -168,10 +168,16 @@ select {
  @media (min-width: 50em) {
   .reviews li {
     display: flex;
-    align-items: center;
+    align-content: center;
   }
   .reviews li::before {
     margin: 0 2rem 0 0;
+  }
+  .reviews li:first-of-type {
+    transform: translateX(-2rem);
+  }
+  .reviews li:last-of-type {
+    transform: translateX(2rem);
   }
  }
 
@@ -201,6 +207,15 @@ select {
   padding: 2rem;
   margin: 0 auto;
   height: 100%;
+}
+
+@media (min-width: 50em) {
+  .quotes li:nth-child(2) {
+    transform: translateY(3rem);
+  }
+  .quotes li:nth-child(3) {
+    transform: translateY(6rem);
+  }
 }
 
 .separate {
@@ -234,8 +249,8 @@ main {
 
 @media (min-width: 50em) {
   main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
+    text-align: left;
   }
   .intro {
     grid-column: 1 /2;
@@ -243,6 +258,7 @@ main {
   
   .reviews {
     grid-column: 2 / 3;
+    align-self: center;
   }
   
   .quotes {
