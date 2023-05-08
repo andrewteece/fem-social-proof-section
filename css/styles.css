@@ -130,14 +130,12 @@ select {
   color: var(--clr-primary-700);
   line-height: 1;
   max-width: 12ch;
-  
-  /* margin-bottom: 1em; */
   font-weight: 800;
  }
 
- @media (max-width: 50em) {
+ @media (min-width: 50em) {
   h1 {
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
  }
@@ -149,9 +147,9 @@ select {
 
  @media (min-width: 50em) {
   .subtitle {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
- }
+ } 
 
  .split {
   display: flex;
