@@ -107,6 +107,12 @@ select {
     font-size: var(--fs-400);
     padding-top: 5rem;
     text-align: center;
+    background-image: 
+      url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top left, bottom right;
  }
 
  .container {
@@ -139,6 +145,12 @@ select {
  .subtitle {
   font-size: var(--fs-500);
   color: var(--clr-neutral-300);
+ }
+
+ @media (min-width: 50em) {
+  .subtitle {
+    margin-top: 2rem;
+  }
  }
 
  .split {
